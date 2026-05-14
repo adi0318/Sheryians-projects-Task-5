@@ -18,7 +18,7 @@ main{
 }
 
 header{
-    height: 100%;
+    min-height: 100vh;
     background-image: url(./assets/hero.avif);
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ header .hero-txt{
 }
 
 header .hero-txt h1{
-    font-size: 170px;
+    font-size: clamp(60px, 12vw, 170px);
 }
 
 header .hero-txt p{
@@ -60,11 +60,11 @@ header .hero-txt p{
 }
 
 .section1{
-    height: 100%;
+    min-height: 100vh;
     background-color: #f5f7f6;
     margin-top: 20px;
     text-align: center;
-    padding: 120px 400px;
+    padding: 120px 5%;
 }
 
 .section1 h1{
@@ -76,12 +76,14 @@ header .hero-txt p{
 .section1 .cards{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .section1 .cards #card1{
     height: 450px;
-    width: 350px;
+    width: min(350px, 100%);
     background-image: url(./assets/card-1.avif);
     background-size: 100% 50%;
     background-position: center top;
@@ -100,7 +102,7 @@ header .hero-txt p{
 
 .section1 .cards #card2{
     height: 450px;
-    width: 350px;
+    width: min(350px, 100%);
     background-image: url(./assets/card-2.avif);
     background-size: 100% 50%;
     background-position: center top;
@@ -112,7 +114,7 @@ header .hero-txt p{
 
 .section1 .cards #card3{
     height: 450px;
-    width: 350px;
+    width: min(350px, 100%);
     background-image: url(./assets/card-3.avif);
     background-size: 100% 50%;
     background-position: center top;
@@ -123,31 +125,36 @@ header .hero-txt p{
 }
 
 .section-2{
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     margin: 20px 0px;
+    flex-wrap: wrap;
 }
 
 .section-2 .left{
     background-image: url(./assets/left.avif);
     background-size: cover;
     width: 50%;
+    min-height: 500px;
 }
 
 .section-2 .right{
     width: 50%;
     text-align: center;
-    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 7%;
 }
 
 .section-2 .right h1{
     font-size: 70px;
-    margin-top: 15%;
 }
 
 .section-2 .right p{
-    font-size: 25px;
-    font-weight: 100px;
+    font-size: clamp(16px, 1.2vw, 22px);
+    font-weight: 100;
     line-height: 1.5;
 }
 
@@ -216,7 +223,8 @@ header .hero-txt p{
 }
 .right-lower div{
     font-size:20px;
-    font-weight: 1000px;
+    font-weight: 300;
+    
 }
 
 .right-lower div:hover{
