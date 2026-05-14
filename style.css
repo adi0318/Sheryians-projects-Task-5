@@ -94,7 +94,7 @@ header .hero-txt p{
     margin-top: 90%;
 }
 
-.section1 .cards .txt-card h2{
+.section1 .cards .txt-card p{
     font-size: 20px;
 }
 
@@ -217,4 +217,8 @@ header .hero-txt p{
 .right-lower div{
     font-size:20px;
     font-weight: 1000px;
+}
+
+.right-lower div:hover{
+    cursor: pointer;
 }
